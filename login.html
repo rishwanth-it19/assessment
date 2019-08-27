@@ -1,0 +1,34 @@
+<html>
+    <head>
+<style>
+p {
+background-color:grey;color:black;
+  border: 8px solid black;
+}
+</style>
+
+
+        <title>Login page</title>
+    </head>
+<center>
+    <body>
+        <h1 style="background-color:tomato;color:white;border:8px solid white;";>LOGIN</h1>
+        <form name="login">
+           <p> Username<input type="text" name="userid"/><br></p>
+           <p> Password<input type="password" name="pswrd"/><br></p>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+        <script language="javascript">
+            function check(form) { 
+                if(form.userid.value == "Rish" && form.pswrd.value == "rishi") {
+                    window.open('pd.html')
+                }
+                else {
+                    alert("Error Password or Username")
+                }
+            }
+        </script>
+    </body>
+</html>
+
